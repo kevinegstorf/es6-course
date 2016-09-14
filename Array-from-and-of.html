@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array .from() and .of()</title>
+</head>
+
+<div class="people">
+  <p>Kevin</p>
+  <p>Hilde</p>
+  <p>Torre</p>
+
+</div>
+<body>
+
+<script>
+const people = Array.from(document.querySelectorAll('.people p'));
+const names = people.map(person => person.textContent);
+console.log(names);
+
+</script>
+</body>
+</html>
